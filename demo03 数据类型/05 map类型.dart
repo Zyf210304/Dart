@@ -15,5 +15,4 @@ void main(List<String> args) {
   person1['work'] = ['iOS', 'Flutter'];
 
   print(person1);
-
 }

@@ -15,6 +15,8 @@ List里面常用的属性和方法：
       toList ( )  其他类型转换成List
       join ()  List转换成字符串
       split()  字符串转化成List
+
+      
       forEach
       map
       where
@@ -23,28 +25,47 @@ List里面常用的属性和方法：
  */
 
 void main(List<String> args) {
-  
   //list里面属性
-    // List myList = ['zhangsan', 'lisi', 'wangwu'];
-    // print(myList.length);
-    // print(myList.isEmpty);
-    // print(myList.isNotEmpty);
-    // print(myList.reversed);  //翻转后的数据不是List 翻转不会影响原来的List
+  // List myList = ['zhangsan', 'lisi', 'wangwu'];
+  // print(myList.length);
+  // print(myList.isEmpty);
+  // print(myList.isNotEmpty);
+  // print(myList.reversed);  //翻转后的数据不是List 翻转不会影响原来的List
 
-    // var newMyList = myList.reversed.toList();
-    // print(myList);
-    // print(newMyList);
+  // var newMyList = myList.reversed.toList();
+  // print(myList);
+  // print(newMyList);
 
   //list里面的方法
-   List  myList = [1 , 2 ,3];
-   myList.add(5);
-   print(myList);
-   myList.addAll([6, 7]);
-   print(myList);
+  List myList = [1, 2, 3];
+  myList.add(5);
+  print(myList);
+  myList.addAll([6, 7]);
+  print(myList);
 
-   print(myList.indexOf(4)); //没有值的话 是-1
-   print(myList.indexOf(3));
+  print(myList.indexOf(4)); //没有值的话 是-1
+  print(myList.indexOf(3));
 
-  
+  myList.remove(1);
+  print(myList);
+  myList.removeAt(2);  
+  print(myList);
+
+  myList.fillRange(0, 2, -1);
+  print(myList);
+
+  myList.insert(1, '1');
+  print(myList);
+  myList.insertAll(1, [2, 3]);
+  print(myList);
+
+  var mylistStr = myList.join(',');
+  print(mylistStr);
+  print(mylistStr is String);
+
+  var newList = mylistStr.split(',');
+  print(newList);
+  print(newList[0] is String);
+
 
 }

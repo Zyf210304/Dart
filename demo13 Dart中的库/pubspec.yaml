@@ -1,0 +1,4 @@
+name: dartDemo
+description: a new Demo
+dependencies:
+     image_picker: ^1.0.7

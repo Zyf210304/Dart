@@ -4,9 +4,6 @@ required 关键字
 */
 
 
-
-
-
 String printUserInfo(String username, {required int age, required String sex}){
   if(age != 0) {
     return "姓名：$username -- 性别：$sex --- 年龄: $age";
